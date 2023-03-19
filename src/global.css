@@ -1,0 +1,72 @@
+:root {
+  --background-color-geral: rgba(187, 187, 187, 0.274);
+  --background-color-cabecalho: rgba(59, 240, 240, 0.16);
+  --background-color-artigo: rgba(194, 247, 230, 0.416);
+  --background-color-links: #d1c4e92d;
+  --background-color-links-aoClique: #D1c4e9;
+  --cor-fonte-geral:#9c7602d8;
+  --cor-fonte-links: goldenrod;
+  --cor-fonte-links-aoClique: #5900fd;
+  --cor-borda-cabecalho: rgba(178, 0, 249, 0.171);
+  --cor-borda-artigo: rgba(225, 0, 255, 0.209);
+  --cor-borda-links:  #D1c4e9;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.titulo {
+  color: var(--cor-fonte-geral);
+}
+
+.menu .menuu {
+  display: flex;
+  flex-flow: column wrap;
+  position: relative;
+}
+
+.cabecalho {
+  padding: 5px;
+  background-color: var(--background-color-cabecalho);
+  position: relative;
+  border-bottom: solid 10px var(--cor-borda-cabecalho);
+  
+}
+
+.cabecalho .menu .links {
+  display: inline-block;
+  padding: 10px;
+}
+
+.endereco {
+  cursor: pointer;
+  margin: 20%;
+  padding: 20%;
+  border: solid 1px var(--cor-borda-links);
+  background-color: var(--background-color-links);
+  border-radius: 5%;
+  color: var(--cor-fonte-links);
+  
+}
+
+.endereco:hover {
+  background-color: var(--background-color-links-aoClique);
+  color: var(--cor-fonte-links-aoClique);
+  transition: 0.5s ease-in-out;
+}
+
+.logo-img {
+  height: 100px;
+  margin: 10%;
+  padding-top: 5%;
+}
+
+article {
+  margin-top: 10px;
+  border-top: solid 10px var(--cor-borda-artigo);
+  border-bottom: solid 10px var(--cor-borda-artigo);
+  background-color: var(--background-color-artigo);
+}
