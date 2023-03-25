@@ -3,5 +3,12 @@
   background-color: #8a2be2;
   color: whitesmoke;
   font-size: 20px;
+}
+
+.container {
   display: grid;
+  /* grid-template-columns: auto auto auto;
+  grid-template-rows: 150px 50px; */
+
+  grid-template: ;
 }
