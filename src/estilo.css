@@ -46,33 +46,38 @@
 
 .azul {
   background-color: cornflowerblue;
-  grid-column: 3 / 6;
-  grid-row: 1/2;
+  grid-area: 1 / 3 / 2 / 6;
+  /* grid-column: 3 / 6;
+  grid-row: 1/2; */
 }
 
 .rosa {
   background-color: hotpink;
-  grid-column: 1 / 3;
-  grid-row: 3/4;
+  grid-area: 3 / 1 / 4 / 3;
+  /* grid-column: 1 / 3;
+  grid-row: 3/4; */
 }
 
 .laranja-escuro {
   background-color: orange;
-  grid-column: 3 / 5;
-  grid-row: 2/4;
+  grid-area: 2 / 3 / 4 / 5;
+  /* grid-column: 3 / 5;
+  grid-row: 2/4; */
 }
 
 .verde-forte {
   background-color: green;
-  grid-column: 5 / 6;
-  grid-row: 2/3;
+  grid-area: 2 / 5 / 3 / 6;
+  /* grid-column: 5 / 6;
+  grid-row: 2/3; */
 
 }
 
 .marrom {
   background-color: burlywood;
-  grid-column: 5 / 6;
-  grid-row: 3/4;
+  grid-area: 3 / 5 / 4 / 6;
+  /* grid-column: 5 / 6;
+  grid-row: 3/4; */
 }
 
 .container2 {
@@ -81,3 +86,74 @@
   grid-template-rows: repeat(3, auto);
   grid-gap: 15px;
 }
+
+.cabecalho2 {
+  background-color: orange;
+  grid-area: cabecalho2;
+}
+
+.menu2 {
+  background-color: aquamarine;
+  grid-area: menu2;
+
+}
+
+.secao-principal {
+  background-color: hotpink;
+  grid-area: secao-principal;
+}
+
+.aside {
+  background-color: yellow;
+  grid-area: aside;
+}
+
+.rodape {
+  background-color: rgb(216, 138, 112);
+  grid-area: rodape;
+}
+
+.container3 {
+  display: grid;
+  /* grid-template-areas: 
+  "cabecalho2 cabecalho2 cabecalho2"
+  "menu2 secao-principal aside"
+  "rodape rodape ."; */
+
+  grid: 
+  "cabecalho2 cabecalho2 cabecalho2" 50px
+  "menu2 secao-principal aside" 100px
+  "rodape rodape rodape" 30px / 160px auto 80px;
+}
+
+.container4 {
+  display: grid;
+  padding: 3em;
+  grid-gap: 2em;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.container4 p {
+  padding: 2em;
+  border-radius: .3em;
+  box-shadow: 10px 10px 30px rgba(0,0,0,0.2);
+  
+}
+
+/* @media(min-width: 550px) {
+  .container4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(min-width: 750px) {
+  .container4 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media(min-width: 950px) {
+  .container4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+} */

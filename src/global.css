@@ -12,7 +12,7 @@
   --cor-borda-links:  #D1c4e9;
 }
 
-header {
+.cabecalho {
   display: flex;
   justify-content: space-around;
   align-items: center;
