@@ -70,3 +70,7 @@ article {
   border-bottom: solid 10px var(--cor-borda-artigo);
   background-color: var(--background-color-artigo);
 }
+
+.container {
+  display: grid;
+}
